@@ -9,10 +9,11 @@
 import Foundation
 import MultipeerConnectivity
 
+//the protocol to see the connected devices and to set their timestamp once sent
 protocol TimeStampServiceManagerDelegate {
     
     func connectedDevicesChanged(manager : TimeStampServiceManager, connectedDevices: [String])
-    func colorChanged(manager : TimeStampServiceManager, colorString: String)
+    func setTimeStamp(manager : TimeStampServiceManager, timeStamp: String)
     
 }
 
@@ -118,10 +119,16 @@ extension TimeStampServiceManager : MCSessionDelegate {
     
     func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
         NSLog("%@", "peer \(peerID) didChangeState: \(state)")
+        //this is used to have the system notified of connections
+        self.delegate?.connectedDevicesChanged(manager: self, connectedDevices:
+            session.connectedPeers.map{$0.displayName})
     }
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
         NSLog("%@", "didReceiveData: \(data)")
+        let str = String(data: data, encoding: .utf8)!
+        //this is used to have the system notified that the timestamp arrived from another device
+        self.delegate?.setTimeStamp(manager: self, timeStamp: str)
     }
     
     func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {
