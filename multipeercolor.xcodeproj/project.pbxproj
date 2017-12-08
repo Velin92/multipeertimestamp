@@ -15,6 +15,7 @@
 		A7FACAFC1FDB0CDD00E92AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FACAFA1FDB0CDD00E92AFE /* LaunchScreen.storyboard */; };
 		A7FACB071FDB0CDD00E92AFE /* multipeercolorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FACB061FDB0CDD00E92AFE /* multipeercolorTests.swift */; };
 		A7FACB121FDB0CDD00E92AFE /* multipeercolorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FACB111FDB0CDD00E92AFE /* multipeercolorUITests.swift */; };
+		A7FACB201FDB0E4900E92AFE /* TimeStampServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FACB1F1FDB0E4900E92AFE /* TimeStampServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A7FACB0D1FDB0CDD00E92AFE /* multipeercolorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = multipeercolorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FACB111FDB0CDD00E92AFE /* multipeercolorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multipeercolorUITests.swift; sourceTree = "<group>"; };
 		A7FACB131FDB0CDD00E92AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7FACB1F1FDB0E4900E92AFE /* TimeStampServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				A7FACAEE1FDB0CDD00E92AFE /* AppDelegate.swift */,
 				A7FACAF01FDB0CDD00E92AFE /* ViewController.swift */,
 				A7FACAF21FDB0CDD00E92AFE /* Main.storyboard */,
+				A7FACB1F1FDB0E4900E92AFE /* TimeStampServiceManager.swift */,
 				A7FACAF81FDB0CDD00E92AFE /* Assets.xcassets */,
 				A7FACAFA1FDB0CDD00E92AFE /* LaunchScreen.storyboard */,
 				A7FACAFD1FDB0CDD00E92AFE /* Info.plist */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7FACB201FDB0E4900E92AFE /* TimeStampServiceManager.swift in Sources */,
 				A7FACAF11FDB0CDD00E92AFE /* ViewController.swift in Sources */,
 				A7FACAEF1FDB0CDD00E92AFE /* AppDelegate.swift in Sources */,
 				A7FACAF71FDB0CDD00E92AFE /* multipeercolor.xcdatamodeld in Sources */,
