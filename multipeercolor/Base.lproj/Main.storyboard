@@ -52,14 +52,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cq-XQ-L7k">
+                                <rect key="frame" x="133" y="534" width="105" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Rearrange"/>
+                                <connections>
+                                    <action selector="rearrange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jUa-0l-euS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ea-7n-JN2">
+                                <rect key="frame" x="16" y="453" width="337" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="charsLabel" destination="0ea-7n-JN2" id="wRy-v3-haa"/>
                         <outlet property="connectionsLabel" destination="7OE-4X-xnN" id="0Dj-pj-j3d"/>
                         <outlet property="myTimeStampLabel" destination="T4r-Gm-agx" id="T51-AG-YnW"/>
                         <outlet property="peerTimeStampLabel" destination="uY1-DJ-Jqd" id="RES-GR-6er"/>
+                        <outlet property="rearrangeButton" destination="8cq-XQ-L7k" id="FPb-N2-UPG"/>
                         <outlet property="sendButton" destination="ma2-az-7CE" id="1FU-of-dL9"/>
                     </connections>
                 </viewController>
